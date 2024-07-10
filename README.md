@@ -44,6 +44,15 @@ npm install
 ```
 npm run dev
 ```
+<p>5. Make .env file and fill in the keys </p>
+
+```
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=
+NEXT_PUBLIC_CONTRACT_ADDRESS=
+PINATA_JWT=
+NEXT_PUBLIC_GATEWAY_URL= 
+
+```
 
   
   
