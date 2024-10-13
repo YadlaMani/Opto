@@ -1,5 +1,5 @@
 import { http } from "@wagmi/core";
-import { sepolia } from "viem/chains";
+import { sepolia, baseSepolia } from "viem/chains"; // import base-sepolia
 import { createConfig } from "wagmi";
 import { walletConnect } from "wagmi/connectors";
 
@@ -9,8 +9,9 @@ const connector = walletConnect({
 
 export const wagmiClient = createConfig({
   connectors: [connector],
-  chains: [sepolia],
+  chains: [sepolia, baseSepolia], // include base-sepolia
   transports: {
     [sepolia.id]: http(),
+    [baseSepolia.id]: http(), // add transport for base-sepolia
   },
 });
