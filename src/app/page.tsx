@@ -44,7 +44,6 @@ export default function HomePage() {
                 content={post?.content}
                 id={Number(formatUnits(post?.id, 0))}
                 image={post?.image}
-                alt={post?.title} // Added alt attribute for accessibility
                 author={post?.author!}
               />
             ))}
